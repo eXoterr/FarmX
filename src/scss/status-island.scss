@@ -1,0 +1,19 @@
+@import 'vars';
+
+.status-island{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    & i{
+        font-size: 1.8rem;
+    }
+
+    & span{
+        width: 100%;
+        text-align: center;
+    }
+    padding: .2rem .5rem;
+    border-radius: 100px;
+    background-color: $secondary;
+    max-width: 40%;
+}

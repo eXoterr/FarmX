@@ -1,0 +1,109 @@
+@@include('parts/header.html')
+
+<section class="container status-island">
+    <i class="bi bi-emoji-smile-fill"></i>
+    <span>Все Показатели в норме!</span>
+</section>
+<section class="container sensors">
+    <div class="sensor">
+        <i class="bi bi-thermometer-half"></i>
+        <h3>30°C</h3>
+        <span>Температура</span>
+    </div>
+    <div class="sensor">
+        <i class="bi bi-droplet-fill"></i>
+        <h3>90%</h3>
+        <span>Влажность</span>
+    </div>
+    <div class="sensor">
+        <i class="bi bi-water"></i>
+        <h3>80%</h3>
+        <span>Уровень жидкости</span>
+    </div>
+    <div class="sensor">
+        <i class="bi bi-fan"></i>
+        <h3>800 об/м</h3>
+        <span>Вентиляция</span>
+    </div>
+</section>
+<div class="separator"></div>
+<section class="container controls">
+    <i class="bi bi-lightbulb-fill"></i>
+    <h3>Управление Освещением</h3>
+    <div class="levels__switches">
+        <div class="switch">
+            <h4>Уровень 1</h4>
+            <input type="checkbox" name="lvl1" id="lvl1">
+            <label class="switch-wrapper" for="lvl1">
+                <span></span>
+            </label>
+        </div>
+        <div class="switch">
+            <h4>Уровень 2</h4>
+            <input type="checkbox" name="lvl2" id="lvl2">
+            <label class="switch-wrapper" for="lvl2">
+                <span></span>
+            </label>
+        </div>
+        <div class="switch">
+            <h4>Уровень 3</h4>
+            <input type="checkbox" name="lvl3" id="lvl3">
+            <label class="switch-wrapper" for="lvl3">
+                <span></span>
+            </label>
+        </div>
+    </div>
+</section>
+<div class="separator"></div>
+<section class="container watering controls">
+    <i class="bi bi-water"></i>
+    <h3>Управление поливом</h3>
+    <h2 id="watering_count">3 Литра</h2>
+    <input type="range" id="watering" name="watering" value="">
+</section>
+<div class="separator"></div>
+<section class="container controls">
+    <i class="bi bi-camera-video-fill"></i>
+    <h3>Система видеонаблюдения</h3>
+    <div class="video">
+        <div class="video__controls">
+            <button class="bttn active">
+                Арбузы
+            </button>
+            <button class="bttn">
+                Дыни
+            </button>
+            <button class="bttn">
+                Помидоры
+            </button>
+
+        </div>
+        <div class="video__view">
+            <h1>Нет сигнала</h1>
+        </div>
+    </div>
+</section>
+<section class="container controls">
+    <i class="bi bi-journal"></i>
+    <h3>Заметки</h3>
+    <div class="notes">
+        <div class="notes__tabs">
+            <button class="notes__tab active">Заметка 1</button>
+            <button class="notes__tab">Заметка 2</button>
+            <button class="notes__tab">Заметка 3</button>
+        </div>
+        <div class="notes__content">
+            <textarea name="" id="" resizable="false">Выберите заметку из списка</textarea>
+        </div>
+    </div>
+</section>
+<section class="container controls">
+    <i class="bi bi-list-columns-reverse"></i>
+    <h3>Последняя активность</h3>
+    <div class="log">
+        <p>[12:00+21.05.2022] WARN - User “admin” has default password!</p>
+        <p>[12:00+21.05.2022] WARN - User “admin” has default password!</p>
+        <p>[11:59+21.05.2022] INFO - Logged in as “admin”</p>
+    </div>
+</section>
+@@include('parts/footer.html')
